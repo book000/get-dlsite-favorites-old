@@ -1,0 +1,26 @@
+{
+  "dependencies": {
+    "@types/puppeteer": "^5.4.2",
+    "puppeteer": "^5.5.0",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.1.3"
+  },
+  "name": "get-dlsite-favorites",
+  "version": "1.0.0",
+  "main": "out/main.js",
+  "devDependencies": {},
+  "scripts": {
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/book000/get-dlsite-favorites.git"
+  },
+  "author": "Tomachi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/book000/get-dlsite-favorites/issues"
+  },
+  "homepage": "https://github.com/book000/get-dlsite-favorites#readme",
+  "description": ""
+}
