@@ -47,6 +47,7 @@ const options: LaunchOptions = {};
     const results = [];
     for (const tr of trs) {
         const title = await tr.$eval("dt.work_name a", elem => elem.textContent?.trim()); // タイトル
+        const url = await tr.$eval("dt.work_name a", elem => elem.getAttribute("href")); // URL
         const folder = await tr.$eval("a._folder_name", elem => elem.textContent?.trim()); // フォルダ
         const EndOfDiscount = await tr.$eval("span.period_date", elem => elem.textContent?.trim()); // 割引終了日時
         const author = await tr.$eval("dd.maker_name a", elem => elem.textContent?.trim()); // 作者
@@ -67,6 +68,7 @@ const options: LaunchOptions = {};
         console.log("genres", genres.join(", "))
         console.log("tags", tags.join(", "))
         console.log("category", category)
+        console.log("url", url);
 
         results.push({
             "title": title,
@@ -78,7 +80,8 @@ const options: LaunchOptions = {};
             "description": description,
             "genres": genres,
             "tags": tags,
-            "category": category
+            "category": category,
+            "url": url
         });
     }
 
