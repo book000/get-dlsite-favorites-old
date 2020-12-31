@@ -52,7 +52,7 @@ const options: LaunchOptions = {};
         const author = await tr.$eval("dd.maker_name a", elem => elem.textContent?.trim()); // 作者
         const initPrice = await tr.$eval("span.strike", elem => elem.textContent?.trim()); // 定価 (割引前価格)
         const currPrice = await tr.$eval("span.work_price", elem => elem.textContent?.trim()); // 現在価格 (割引後価格)
-        const description = await tr.$eval("span.work_price", elem => elem.textContent?.trim()); // 説明文
+        const description = await tr.$eval("dd.work_text", elem => elem.textContent?.trim()); // 説明文
         const genres = await getGenres(tr); // ジャンル
         const tags = await getTags(tr); // タグ
         const category = await tr.$eval("div.work_category", elem => elem.textContent?.trim()); // カテゴリ
