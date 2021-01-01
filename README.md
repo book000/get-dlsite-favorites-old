@@ -34,6 +34,11 @@ From the favorite list of [DLsite](https://www.dlsite.com/), pick up the discoun
 4. `node out\main.js`
 5. View `data.json`
 
+## Disclaimer
+
+このプロジェクトを使用したことによって引き起こされた問題に関して開発者は一切の責任を負いません。  
+The author is not responsible for any problems caused by the user using this project.
+
 ## License
 
 このプロジェクトのライセンスは[MIT License](LICENSE)です。  
